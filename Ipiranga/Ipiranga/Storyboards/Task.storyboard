@@ -37,12 +37,31 @@
                     <view key="view" contentMode="scaleToFill" id="WIh-eG-hOC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8V3-Qh-xWW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="dqY-ou-aIz" id="5vf-x5-fah"/>
+                                    <outlet property="delegate" destination="dqY-ou-aIz" id="Vs8-hE-1Nf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JPM-Oy-cfI" firstAttribute="bottom" secondItem="8V3-Qh-xWW" secondAttribute="bottom" id="YEK-DG-1T4"/>
+                            <constraint firstItem="JPM-Oy-cfI" firstAttribute="trailing" secondItem="8V3-Qh-xWW" secondAttribute="trailing" id="YsK-ac-NC1"/>
+                            <constraint firstItem="8V3-Qh-xWW" firstAttribute="top" secondItem="JPM-Oy-cfI" secondAttribute="top" id="dN8-ey-JC2"/>
+                            <constraint firstItem="8V3-Qh-xWW" firstAttribute="leading" secondItem="JPM-Oy-cfI" secondAttribute="leading" id="uh8-oc-uKR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JPM-Oy-cfI"/>
                     </view>
                     <navigationItem key="navigationItem" id="zX7-KK-3WE">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="KTb-hU-qkr"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="8V3-Qh-xWW" id="Pad-EM-dsQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F2T-jw-jv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

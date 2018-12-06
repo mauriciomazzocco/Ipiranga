@@ -14,6 +14,8 @@
 		D2115D0321B977DE0077A046 /* fluigSdk.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2115D0221B977DE0077A046 /* fluigSdk.plist */; };
 		D2115D0621B9785E0077A046 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2115D0421B9785E0077A046 /* Notification.storyboard */; };
 		D2115D0721B9785E0077A046 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2115D0521B9785E0077A046 /* Profile.storyboard */; };
+		D2115D0A21B97B280077A046 /* FluigAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2115D0921B97B280077A046 /* FluigAPI.swift */; };
+		D2115D0C21B97BBE0077A046 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2115D0B21B97BBE0077A046 /* Constants.swift */; };
 		D276CD6921B85F7400EEB268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CD6821B85F7400EEB268 /* AppDelegate.swift */; };
 		D276CD7021B85F7500EEB268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D276CD6F21B85F7500EEB268 /* Assets.xcassets */; };
 		D276CD7321B85F7500EEB268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D276CD7121B85F7500EEB268 /* LaunchScreen.storyboard */; };
@@ -57,6 +59,8 @@
 		D2115D0221B977DE0077A046 /* fluigSdk.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fluigSdk.plist; sourceTree = "<group>"; };
 		D2115D0421B9785E0077A046 /* Notification.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
 		D2115D0521B9785E0077A046 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		D2115D0921B97B280077A046 /* FluigAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluigAPI.swift; sourceTree = "<group>"; };
+		D2115D0B21B97BBE0077A046 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D276CD6521B85F7400EEB268 /* Ipiranga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ipiranga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D276CD6821B85F7400EEB268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D276CD6F21B85F7500EEB268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,6 +128,14 @@
 			path = "Support Files";
 			sourceTree = "<group>";
 		};
+		D2115D0821B97B1B0077A046 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D2115D0921B97B280077A046 /* FluigAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		D276CD5C21B85F7400EEB268 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +161,7 @@
 		D276CD6721B85F7400EEB268 /* Ipiranga */ = {
 			isa = PBXGroup;
 			children = (
+				D2115D0821B97B1B0077A046 /* Services */,
 				D2115D0121B977B00077A046 /* Support Files */,
 				D276CDAD21B96BBD00EEB268 /* Utils */,
 				D276CDAA21B96B1400EEB268 /* Controller */,
@@ -202,6 +215,7 @@
 		D276CDAD21B96BBD00EEB268 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D2115D0B21B97BBE0077A046 /* Constants.swift */,
 				D276CDB021B96C3500EEB268 /* UIColor+Extension.swift */,
 			);
 			path = Utils;
@@ -461,10 +475,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2115D0A21B97B280077A046 /* FluigAPI.swift in Sources */,
 				D276CD6921B85F7400EEB268 /* AppDelegate.swift in Sources */,
 				D276CDB621B9702000EEB268 /* IpirangaListViewController.swift in Sources */,
 				D276CDB121B96C3500EEB268 /* UIColor+Extension.swift in Sources */,
 				D276CDBA21B973D700EEB268 /* TaskTabBarViewController.swift in Sources */,
+				D2115D0C21B97BBE0077A046 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
