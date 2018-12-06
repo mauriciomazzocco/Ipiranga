@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import fluigSDKCore
+import fluigSDKFlows
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +17,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+
+               self.window?.makeKeyAndVisible()
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "tabBarcontroller") as! TaskTabBarViewController
+
+        if let _ = FluigSDK.currentUser {
+
+            self.window?.rootViewController = viewController
+
+        } else {
+
+            let configuration = LoginFlowConfiguration(
+                logoImage: UIImage(named:"imageLoginApproval")!,
+                background: .video(Bundle.main.url(forResource: "BPMBackgroundLogin", withExtension: "mp4")!),
+                buttonGradient: (.greenBPM, .greenBPM),
+                emailRequestPageTitle: nil,
+                emailRequestPageTips: [NSLocalizedString("loginTip1", comment: ""), NSLocalizedString("loginTip2", comment: ""),NSLocalizedString("loginTip3", comment: "")],
+                passwordRequestPageTitle: nil,
+                onSuccessReplaceRootWith: viewController
+            )
+
+            let flow = LoginFlow(configuration: configuration)
+            flow.startAsRoot(window: self.window!)
+        }
+
+
+
+
         return true
     }
 
