@@ -9,19 +9,20 @@
 /* Begin PBXBuildFile section */
 		16CFB1D916A9E8CCD36FBD1B /* Pods_IpirangaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7343DA39BC380438E7DC98C8 /* Pods_IpirangaTests.framework */; };
 		765EF36DCF5FB45239E9259B /* Pods_Ipiranga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C15068A0CC37C54C561CE21 /* Pods_Ipiranga.framework */; };
+		D2115CFD21B974CD0077A046 /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2115CF921B974CD0077A046 /* Task.storyboard */; };
+		D2115CFF21B974CD0077A046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2115CFB21B974CD0077A046 /* Main.storyboard */; };
+		D2115D0321B977DE0077A046 /* fluigSdk.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2115D0221B977DE0077A046 /* fluigSdk.plist */; };
+		D2115D0621B9785E0077A046 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2115D0421B9785E0077A046 /* Notification.storyboard */; };
+		D2115D0721B9785E0077A046 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2115D0521B9785E0077A046 /* Profile.storyboard */; };
 		D276CD6921B85F7400EEB268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CD6821B85F7400EEB268 /* AppDelegate.swift */; };
 		D276CD7021B85F7500EEB268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D276CD6F21B85F7500EEB268 /* Assets.xcassets */; };
 		D276CD7321B85F7500EEB268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D276CD7121B85F7500EEB268 /* LaunchScreen.storyboard */; };
 		D276CD7E21B85F7500EEB268 /* IpirangaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CD7D21B85F7500EEB268 /* IpirangaTests.swift */; };
 		D276CD8921B85F7500EEB268 /* IpirangaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CD8821B85F7500EEB268 /* IpirangaUITests.swift */; };
 		D276CD9C21B96AC100EEB268 /* BPMBackgroundLogin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D276CD9B21B96AC100EEB268 /* BPMBackgroundLogin.mp4 */; };
-		D276CDA621B96AF200EEB268 /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D276CD9E21B96AF000EEB268 /* Task.storyboard */; };
-		D276CDA721B96AF200EEB268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D276CDA021B96AF000EEB268 /* Main.storyboard */; };
-		D276CDA821B96AF200EEB268 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D276CDA221B96AF000EEB268 /* Profile.storyboard */; };
-		D276CDA921B96AF200EEB268 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D276CDA421B96AF100EEB268 /* Notification.storyboard */; };
-		D276CDAC21B96B2600EEB268 /* TaskTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CDAB21B96B2600EEB268 /* TaskTabBarViewController.swift */; };
 		D276CDB121B96C3500EEB268 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CDB021B96C3500EEB268 /* UIColor+Extension.swift */; };
 		D276CDB621B9702000EEB268 /* IpirangaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CDB521B9702000EEB268 /* IpirangaListViewController.swift */; };
+		D276CDBA21B973D700EEB268 /* TaskTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CDB921B973D700EEB268 /* TaskTabBarViewController.swift */; };
 		D50005B5F88BABA0E5ADD278 /* Pods_IpirangaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1441716BBEE8D87490BD560 /* Pods_IpirangaUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,11 @@
 		74DC157D22D499CABC0C989C /* Pods-Ipiranga.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ipiranga.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ipiranga/Pods-Ipiranga.debug.xcconfig"; sourceTree = "<group>"; };
 		7F45C214D20D4BEF372952D7 /* Pods-Ipiranga.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ipiranga.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ipiranga/Pods-Ipiranga.release.xcconfig"; sourceTree = "<group>"; };
 		C1441716BBEE8D87490BD560 /* Pods_IpirangaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IpirangaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2115CF921B974CD0077A046 /* Task.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Task.storyboard; sourceTree = "<group>"; };
+		D2115CFB21B974CD0077A046 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D2115D0221B977DE0077A046 /* fluigSdk.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fluigSdk.plist; sourceTree = "<group>"; };
+		D2115D0421B9785E0077A046 /* Notification.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		D2115D0521B9785E0077A046 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		D276CD6521B85F7400EEB268 /* Ipiranga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ipiranga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D276CD6821B85F7400EEB268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D276CD6F21B85F7500EEB268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,13 +69,9 @@
 		D276CD8821B85F7500EEB268 /* IpirangaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpirangaUITests.swift; sourceTree = "<group>"; };
 		D276CD8A21B85F7500EEB268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D276CD9B21B96AC100EEB268 /* BPMBackgroundLogin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = BPMBackgroundLogin.mp4; path = "../../../bpm-aprovacao-ios/BPMAprovacao/BPMBackgroundLogin.mp4"; sourceTree = "<group>"; };
-		D276CD9F21B96AF000EEB268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../bpm-aprovacao-ios/BPMAprovacao/Base.lproj/Task.storyboard"; sourceTree = "<group>"; };
-		D276CDA121B96AF000EEB268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../bpm-aprovacao-ios/BPMAprovacao/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
-		D276CDA321B96AF000EEB268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../bpm-aprovacao-ios/BPMAprovacao/Base.lproj/Profile.storyboard"; sourceTree = "<group>"; };
-		D276CDA521B96AF100EEB268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../bpm-aprovacao-ios/BPMAprovacao/Base.lproj/Notification.storyboard"; sourceTree = "<group>"; };
-		D276CDAB21B96B2600EEB268 /* TaskTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskTabBarViewController.swift; path = "../../../../bpm-aprovacao-ios/BPMAprovacao/TaskTabBarViewController.swift"; sourceTree = "<group>"; };
 		D276CDB021B96C3500EEB268 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "../../../../bpm-aprovacao-ios/BPMAprovacao/UIColor+Extension.swift"; sourceTree = "<group>"; };
 		D276CDB521B9702000EEB268 /* IpirangaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpirangaListViewController.swift; sourceTree = "<group>"; };
+		D276CDB921B973D700EEB268 /* TaskTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskTabBarViewController.swift; path = Ipiranga/Controller/TaskTabBarViewController.swift; sourceTree = SOURCE_ROOT; };
 		E0FC5B305A78740B0768C4DC /* Pods-IpirangaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IpirangaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IpirangaTests/Pods-IpirangaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D2115D0121B977B00077A046 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2115D0221B977DE0077A046 /* fluigSdk.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
 		D276CD5C21B85F7400EEB268 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +149,7 @@
 		D276CD6721B85F7400EEB268 /* Ipiranga */ = {
 			isa = PBXGroup;
 			children = (
+				D2115D0121B977B00077A046 /* Support Files */,
 				D276CDAD21B96BBD00EEB268 /* Utils */,
 				D276CDAA21B96B1400EEB268 /* Controller */,
 				D276CD9D21B96ACC00EEB268 /* Storyboards */,
@@ -172,10 +183,10 @@
 		D276CD9D21B96ACC00EEB268 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				D276CDA021B96AF000EEB268 /* Main.storyboard */,
-				D276CDA421B96AF100EEB268 /* Notification.storyboard */,
-				D276CDA221B96AF000EEB268 /* Profile.storyboard */,
-				D276CD9E21B96AF000EEB268 /* Task.storyboard */,
+				D2115CFB21B974CD0077A046 /* Main.storyboard */,
+				D2115CF921B974CD0077A046 /* Task.storyboard */,
+				D2115D0421B9785E0077A046 /* Notification.storyboard */,
+				D2115D0521B9785E0077A046 /* Profile.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -184,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				D276CDB221B96F8000EEB268 /* Scenes */,
-				D276CDAB21B96B2600EEB268 /* TaskTabBarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -208,6 +218,7 @@
 		D276CDB321B96F9600EEB268 /* Task */ = {
 			isa = PBXGroup;
 			children = (
+				D276CDB921B973D700EEB268 /* TaskTabBarViewController.swift */,
 				D276CDB421B96FDB00EEB268 /* IpirangaList */,
 			);
 			path = Task;
@@ -339,13 +350,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D276CDA621B96AF200EEB268 /* Task.storyboard in Resources */,
 				D276CD7321B85F7500EEB268 /* LaunchScreen.storyboard in Resources */,
+				D2115CFD21B974CD0077A046 /* Task.storyboard in Resources */,
+				D2115D0721B9785E0077A046 /* Profile.storyboard in Resources */,
 				D276CD9C21B96AC100EEB268 /* BPMBackgroundLogin.mp4 in Resources */,
-				D276CDA721B96AF200EEB268 /* Main.storyboard in Resources */,
+				D2115D0321B977DE0077A046 /* fluigSdk.plist in Resources */,
+				D2115CFF21B974CD0077A046 /* Main.storyboard in Resources */,
 				D276CD7021B85F7500EEB268 /* Assets.xcassets in Resources */,
-				D276CDA921B96AF200EEB268 /* Notification.storyboard in Resources */,
-				D276CDA821B96AF200EEB268 /* Profile.storyboard in Resources */,
+				D2115D0621B9785E0077A046 /* Notification.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,10 +461,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D276CDAC21B96B2600EEB268 /* TaskTabBarViewController.swift in Sources */,
 				D276CD6921B85F7400EEB268 /* AppDelegate.swift in Sources */,
 				D276CDB621B9702000EEB268 /* IpirangaListViewController.swift in Sources */,
 				D276CDB121B96C3500EEB268 /* UIColor+Extension.swift in Sources */,
+				D276CDBA21B973D700EEB268 /* TaskTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,38 +506,6 @@
 				D276CD7221B85F7500EEB268 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		D276CD9E21B96AF000EEB268 /* Task.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D276CD9F21B96AF000EEB268 /* Base */,
-			);
-			name = Task.storyboard;
-			sourceTree = "<group>";
-		};
-		D276CDA021B96AF000EEB268 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D276CDA121B96AF000EEB268 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D276CDA221B96AF000EEB268 /* Profile.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D276CDA321B96AF000EEB268 /* Base */,
-			);
-			name = Profile.storyboard;
-			sourceTree = "<group>";
-		};
-		D276CDA421B96AF100EEB268 /* Notification.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D276CDA521B96AF100EEB268 /* Base */,
-			);
-			name = Notification.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
