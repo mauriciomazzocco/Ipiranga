@@ -1,0 +1,6 @@
+framework module Pods_Ipiranga {
+  umbrella header "Pods-Ipiranga-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "fluigsdk",
+  "version": "0.2.10",
+  "summary": "fluig SDK",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "homepage": "https://github.com/fluig/fluigsdkios",
+  "license": "MIT",
+  "authors": {
+    "fluig": "box@totvs.com.br"
+  },
+  "source": {
+    "http": "https://github.com/fluig/fluigsdkios.git"
+  },
+  "requires_arc": true,
+  "swift_version": "4.2",
+  "default_subspecs": [
+    "core",
+    "ui",
+    "flows"
+  ],
+  "subspecs": [
+    {
+      "name": "core",
+      "ios": {
+        "vendored_frameworks": "fluigSDKCore.framework"
+      }
+    },
+    {
+      "name": "ui",
+      "ios": {
+        "vendored_frameworks": "fluigSDKUi.framework"
+      }
+    },
+    {
+      "name": "flows",
+      "ios": {
+        "vendored_frameworks": "fluigSDKFlows.framework"
+      },
+      "dependencies": {
+        "fluigsdk/core": [
+
+        ],
+        "fluigsdk/ui": [
+
+        ]
+      }
+    }
+  ]
+}

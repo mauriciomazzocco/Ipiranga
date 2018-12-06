@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16CFB1D916A9E8CCD36FBD1B /* Pods_IpirangaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7343DA39BC380438E7DC98C8 /* Pods_IpirangaTests.framework */; };
+		765EF36DCF5FB45239E9259B /* Pods_Ipiranga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C15068A0CC37C54C561CE21 /* Pods_Ipiranga.framework */; };
 		D276CD6921B85F7400EEB268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CD6821B85F7400EEB268 /* AppDelegate.swift */; };
 		D276CD6B21B85F7400EEB268 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CD6A21B85F7400EEB268 /* ViewController.swift */; };
 		D276CD6E21B85F7400EEB268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D276CD6C21B85F7400EEB268 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		D276CD7321B85F7500EEB268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D276CD7121B85F7500EEB268 /* LaunchScreen.storyboard */; };
 		D276CD7E21B85F7500EEB268 /* IpirangaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CD7D21B85F7500EEB268 /* IpirangaTests.swift */; };
 		D276CD8921B85F7500EEB268 /* IpirangaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CD8821B85F7500EEB268 /* IpirangaUITests.swift */; };
+		D50005B5F88BABA0E5ADD278 /* Pods_IpirangaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1441716BBEE8D87490BD560 /* Pods_IpirangaUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0226282FB1FB59DF2992EC8E /* Pods-IpirangaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IpirangaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IpirangaUITests/Pods-IpirangaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		34416234C59E079D6185566A /* Pods-IpirangaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IpirangaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IpirangaTests/Pods-IpirangaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C15068A0CC37C54C561CE21 /* Pods_Ipiranga.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ipiranga.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7123E33ECAE39E84B4E646BE /* Pods-IpirangaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IpirangaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IpirangaUITests/Pods-IpirangaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7343DA39BC380438E7DC98C8 /* Pods_IpirangaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IpirangaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DC157D22D499CABC0C989C /* Pods-Ipiranga.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ipiranga.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ipiranga/Pods-Ipiranga.debug.xcconfig"; sourceTree = "<group>"; };
+		7F45C214D20D4BEF372952D7 /* Pods-Ipiranga.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ipiranga.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ipiranga/Pods-Ipiranga.release.xcconfig"; sourceTree = "<group>"; };
+		C1441716BBEE8D87490BD560 /* Pods_IpirangaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IpirangaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D276CD6521B85F7400EEB268 /* Ipiranga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ipiranga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D276CD6821B85F7400EEB268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D276CD6A21B85F7400EEB268 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,7 @@
 		D276CD8421B85F7500EEB268 /* IpirangaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IpirangaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D276CD8821B85F7500EEB268 /* IpirangaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpirangaUITests.swift; sourceTree = "<group>"; };
 		D276CD8A21B85F7500EEB268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0FC5B305A78740B0768C4DC /* Pods-IpirangaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IpirangaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IpirangaTests/Pods-IpirangaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765EF36DCF5FB45239E9259B /* Pods_Ipiranga.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16CFB1D916A9E8CCD36FBD1B /* Pods_IpirangaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D50005B5F88BABA0E5ADD278 /* Pods_IpirangaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1700ED34BF44CAC5A0784088 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74DC157D22D499CABC0C989C /* Pods-Ipiranga.debug.xcconfig */,
+				7F45C214D20D4BEF372952D7 /* Pods-Ipiranga.release.xcconfig */,
+				34416234C59E079D6185566A /* Pods-IpirangaTests.debug.xcconfig */,
+				E0FC5B305A78740B0768C4DC /* Pods-IpirangaTests.release.xcconfig */,
+				7123E33ECAE39E84B4E646BE /* Pods-IpirangaUITests.debug.xcconfig */,
+				0226282FB1FB59DF2992EC8E /* Pods-IpirangaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D276CD5C21B85F7400EEB268 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				D276CD7C21B85F7500EEB268 /* IpirangaTests */,
 				D276CD8721B85F7500EEB268 /* IpirangaUITests */,
 				D276CD6621B85F7400EEB268 /* Products */,
+				1700ED34BF44CAC5A0784088 /* Pods */,
+				E2F0350C49E8088F77C72D00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +155,16 @@
 			path = IpirangaUITests;
 			sourceTree = "<group>";
 		};
+		E2F0350C49E8088F77C72D00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C15068A0CC37C54C561CE21 /* Pods_Ipiranga.framework */,
+				7343DA39BC380438E7DC98C8 /* Pods_IpirangaTests.framework */,
+				C1441716BBEE8D87490BD560 /* Pods_IpirangaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D276CD8D21B85F7500EEB268 /* Build configuration list for PBXNativeTarget "Ipiranga" */;
 			buildPhases = (
+				3DAA18DA1B1270BE00DE43F1 /* [CP] Check Pods Manifest.lock */,
 				D276CD6121B85F7400EEB268 /* Sources */,
 				D276CD6221B85F7400EEB268 /* Frameworks */,
 				D276CD6321B85F7400EEB268 /* Resources */,
+				5B0FC43D89C98F504E537ACE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D276CD9021B85F7500EEB268 /* Build configuration list for PBXNativeTarget "IpirangaTests" */;
 			buildPhases = (
+				ED19D52948E95B63D1211E79 /* [CP] Check Pods Manifest.lock */,
 				D276CD7521B85F7500EEB268 /* Sources */,
 				D276CD7621B85F7500EEB268 /* Frameworks */,
 				D276CD7721B85F7500EEB268 /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D276CD9321B85F7500EEB268 /* Build configuration list for PBXNativeTarget "IpirangaUITests" */;
 			buildPhases = (
+				9F8A041317ADE99B5766EC3E /* [CP] Check Pods Manifest.lock */,
 				D276CD8021B85F7500EEB268 /* Sources */,
 				D276CD8121B85F7500EEB268 /* Frameworks */,
 				D276CD8221B85F7500EEB268 /* Resources */,
@@ -250,6 +294,85 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DAA18DA1B1270BE00DE43F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ipiranga-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B0FC43D89C98F504E537ACE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ipiranga/Pods-Ipiranga-frameworks.sh",
+				"${PODS_ROOT}/fluigsdk/fluigSDKCore.framework",
+				"${PODS_ROOT}/fluigsdk/fluigSDKFlows.framework",
+				"${PODS_ROOT}/fluigsdk/fluigSDKUi.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/fluigSDKCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/fluigSDKFlows.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/fluigSDKUi.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ipiranga/Pods-Ipiranga-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F8A041317ADE99B5766EC3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IpirangaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED19D52948E95B63D1211E79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IpirangaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D276CD6121B85F7400EEB268 /* Sources */ = {
@@ -430,6 +553,7 @@
 		};
 		D276CD8E21B85F7500EEB268 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74DC157D22D499CABC0C989C /* Pods-Ipiranga.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +572,7 @@
 		};
 		D276CD8F21B85F7500EEB268 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F45C214D20D4BEF372952D7 /* Pods-Ipiranga.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +591,7 @@
 		};
 		D276CD9121B85F7500EEB268 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34416234C59E079D6185566A /* Pods-IpirangaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +613,7 @@
 		};
 		D276CD9221B85F7500EEB268 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0FC5B305A78740B0768C4DC /* Pods-IpirangaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +635,7 @@
 		};
 		D276CD9421B85F7500EEB268 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7123E33ECAE39E84B4E646BE /* Pods-IpirangaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +656,7 @@
 		};
 		D276CD9521B85F7500EEB268 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0226282FB1FB59DF2992EC8E /* Pods-IpirangaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
