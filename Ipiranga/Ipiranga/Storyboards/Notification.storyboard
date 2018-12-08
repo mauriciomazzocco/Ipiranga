@@ -13,7 +13,7 @@
         <scene sceneID="Qjx-4q-HvX">
             <objects>
                 <navigationController title="Item 2 Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="Hhn-lr-H8K" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notificações" image="imgTabBarNotification" id="OFD-bE-spD"/>
+                    <tabBarItem key="tabBarItem" title="Meta" image="imgTabBarNotification" id="OFD-bE-spD"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="atn-eD-EQN">
@@ -69,6 +69,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="imgTabBarNotification" width="24" height="27"/>
+        <image name="imgTabBarNotification" width="51.200000762939453" height="51.200000762939453"/>
     </resources>
 </document>

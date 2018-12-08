@@ -2,17 +2,15 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "iconsIOsTasks.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "iconsIOsTasks@2x.png",
+      "filename" : "planet-earth.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "iconsIOsTasks@3x.png",
       "scale" : "3x"
     }
   ],

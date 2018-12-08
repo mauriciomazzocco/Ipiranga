@@ -1,7 +1,10 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/fluigsdk"
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift" "${PODS_CONFIGURATION_BUILD_DIR}/RSLoadingView" "${PODS_CONFIGURATION_BUILD_DIR}/SBJson" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "${PODS_CONFIGURATION_BUILD_DIR}/TKImageShowing" "${PODS_ROOT}/fluigsdk"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "fluigSDKCore" -framework "fluigSDKFlows" -framework "fluigSDKUi"
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/RSLoadingView/RSLoadingView.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/SBJson/SBJson.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/TKImageShowing/TKImageShowing.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Alamofire" -framework "IQKeyboardManagerSwift" -framework "RSLoadingView" -framework "SBJson" -framework "SDWebImage" -framework "TKImageShowing" -framework "fluigSDKCore" -framework "fluigSDKFlows" -framework "fluigSDKUi"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

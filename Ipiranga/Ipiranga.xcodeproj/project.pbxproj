@@ -16,6 +16,10 @@
 		D2115D0721B9785E0077A046 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2115D0521B9785E0077A046 /* Profile.storyboard */; };
 		D2115D0A21B97B280077A046 /* FluigAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2115D0921B97B280077A046 /* FluigAPI.swift */; };
 		D2115D0C21B97BBE0077A046 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2115D0B21B97BBE0077A046 /* Constants.swift */; };
+		D2115D1121B9895E0077A046 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2115D0F21B9895E0077A046 /* TaskTableViewCell.swift */; };
+		D2115D1221B9895E0077A046 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2115D1021B9895E0077A046 /* TaskTableViewCell.xib */; };
+		D2115D1521B98EFC0077A046 /* IpirangaInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2115D1421B98EFC0077A046 /* IpirangaInputViewController.swift */; };
+		D250C12C21BAC915003F5FAA /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250C12B21BAC915003F5FAA /* CameraHandler.swift */; };
 		D276CD6921B85F7400EEB268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CD6821B85F7400EEB268 /* AppDelegate.swift */; };
 		D276CD7021B85F7500EEB268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D276CD6F21B85F7500EEB268 /* Assets.xcassets */; };
 		D276CD7321B85F7500EEB268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D276CD7121B85F7500EEB268 /* LaunchScreen.storyboard */; };
@@ -25,6 +29,17 @@
 		D276CDB121B96C3500EEB268 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CDB021B96C3500EEB268 /* UIColor+Extension.swift */; };
 		D276CDB621B9702000EEB268 /* IpirangaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CDB521B9702000EEB268 /* IpirangaListViewController.swift */; };
 		D276CDBA21B973D700EEB268 /* TaskTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CDB921B973D700EEB268 /* TaskTabBarViewController.swift */; };
+		D2C4580521BAD02400F77FD9 /* Attachment.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C4580321BAD02300F77FD9 /* Attachment.m */; };
+		D2C4580821BAD35200F77FD9 /* AttachmentProcessReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C4580621BAD35200F77FD9 /* AttachmentProcessReturn.m */; };
+		D2E3613521BAFEA300D68AAE /* WorkflowProcessDto.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E3613421BAFEA300D68AAE /* WorkflowProcessDto.m */; };
+		D2E3614321BB40ED00D68AAE /* DadosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E3614221BB40ED00D68AAE /* DadosView.swift */; };
+		D2E3614621BB425D00D68AAE /* ViagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E3614521BB425D00D68AAE /* ViagemViewController.swift */; };
+		D2E3614821BB42AA00D68AAE /* DadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E3614721BB42AA00D68AAE /* DadosViewController.swift */; };
+		D2E3614A21BB439F00D68AAE /* ComprovanteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E3614921BB439F00D68AAE /* ComprovanteViewController.swift */; };
+		D2E3614C21BB480800D68AAE /* mapa.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E3614B21BB480800D68AAE /* mapa.png */; };
+		D2E3614F21BB4D3700D68AAE /* AttachmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E3614D21BB4D3700D68AAE /* AttachmentTableViewCell.swift */; };
+		D2E3615021BB4D3700D68AAE /* AttachmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E3614E21BB4D3700D68AAE /* AttachmentTableViewCell.xib */; };
+		D2E3615221BB4DD000D68AAE /* Adobe_Photoshop_Elements_PNG.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E3615121BB4DD000D68AAE /* Adobe_Photoshop_Elements_PNG.png */; };
 		D50005B5F88BABA0E5ADD278 /* Pods_IpirangaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1441716BBEE8D87490BD560 /* Pods_IpirangaUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +76,11 @@
 		D2115D0521B9785E0077A046 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		D2115D0921B97B280077A046 /* FluigAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluigAPI.swift; sourceTree = "<group>"; };
 		D2115D0B21B97BBE0077A046 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D2115D0F21B9895E0077A046 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		D2115D1021B9895E0077A046 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		D2115D1421B98EFC0077A046 /* IpirangaInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpirangaInputViewController.swift; sourceTree = "<group>"; };
+		D2115D1621B9952D0077A046 /* Ipiranga-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ipiranga-Bridging-Header.h"; sourceTree = "<group>"; };
+		D250C12B21BAC915003F5FAA /* CameraHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHandler.swift; sourceTree = "<group>"; };
 		D276CD6521B85F7400EEB268 /* Ipiranga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ipiranga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D276CD6821B85F7400EEB268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D276CD6F21B85F7500EEB268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +96,20 @@
 		D276CDB021B96C3500EEB268 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "../../../../bpm-aprovacao-ios/BPMAprovacao/UIColor+Extension.swift"; sourceTree = "<group>"; };
 		D276CDB521B9702000EEB268 /* IpirangaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpirangaListViewController.swift; sourceTree = "<group>"; };
 		D276CDB921B973D700EEB268 /* TaskTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskTabBarViewController.swift; path = Ipiranga/Controller/TaskTabBarViewController.swift; sourceTree = SOURCE_ROOT; };
+		D2C4580321BAD02300F77FD9 /* Attachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attachment.m; sourceTree = "<group>"; };
+		D2C4580421BAD02400F77FD9 /* Attachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attachment.h; sourceTree = "<group>"; };
+		D2C4580621BAD35200F77FD9 /* AttachmentProcessReturn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachmentProcessReturn.m; sourceTree = "<group>"; };
+		D2C4580721BAD35200F77FD9 /* AttachmentProcessReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachmentProcessReturn.h; sourceTree = "<group>"; };
+		D2E3613321BAFEA300D68AAE /* WorkflowProcessDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkflowProcessDto.h; sourceTree = "<group>"; };
+		D2E3613421BAFEA300D68AAE /* WorkflowProcessDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkflowProcessDto.m; sourceTree = "<group>"; };
+		D2E3614221BB40ED00D68AAE /* DadosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosView.swift; sourceTree = "<group>"; };
+		D2E3614521BB425D00D68AAE /* ViagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViagemViewController.swift; sourceTree = "<group>"; };
+		D2E3614721BB42AA00D68AAE /* DadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosViewController.swift; sourceTree = "<group>"; };
+		D2E3614921BB439F00D68AAE /* ComprovanteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComprovanteViewController.swift; sourceTree = "<group>"; };
+		D2E3614B21BB480800D68AAE /* mapa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapa.png; sourceTree = "<group>"; };
+		D2E3614D21BB4D3700D68AAE /* AttachmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentTableViewCell.swift; sourceTree = "<group>"; };
+		D2E3614E21BB4D3700D68AAE /* AttachmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttachmentTableViewCell.xib; sourceTree = "<group>"; };
+		D2E3615121BB4DD000D68AAE /* Adobe_Photoshop_Elements_PNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Adobe_Photoshop_Elements_PNG.png; sourceTree = "<group>"; };
 		E0FC5B305A78740B0768C4DC /* Pods-IpirangaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IpirangaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IpirangaTests/Pods-IpirangaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +170,34 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		D2115D0D21B989130077A046 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2115D0E21B989230077A046 /* Cells */,
+				D2E3614221BB40ED00D68AAE /* DadosView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2115D0E21B989230077A046 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D2115D0F21B9895E0077A046 /* TaskTableViewCell.swift */,
+				D2115D1021B9895E0077A046 /* TaskTableViewCell.xib */,
+				D2E3614D21BB4D3700D68AAE /* AttachmentTableViewCell.swift */,
+				D2E3614E21BB4D3700D68AAE /* AttachmentTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D2115D1321B98EBE0077A046 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				D2115D1421B98EFC0077A046 /* IpirangaInputViewController.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
 		D276CD5C21B85F7400EEB268 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +223,10 @@
 		D276CD6721B85F7400EEB268 /* Ipiranga */ = {
 			isa = PBXGroup;
 			children = (
+				D2E3615121BB4DD000D68AAE /* Adobe_Photoshop_Elements_PNG.png */,
+				D2E3614B21BB480800D68AAE /* mapa.png */,
+				D2C457FC21BACEC700F77FD9 /* Model */,
+				D2115D0D21B989130077A046 /* View */,
 				D2115D0821B97B1B0077A046 /* Services */,
 				D2115D0121B977B00077A046 /* Support Files */,
 				D276CDAD21B96BBD00EEB268 /* Utils */,
@@ -207,6 +273,7 @@
 		D276CDAA21B96B1400EEB268 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D2E3614421BB424300D68AAE /* New Group */,
 				D276CDB221B96F8000EEB268 /* Scenes */,
 			);
 			path = Controller;
@@ -217,6 +284,8 @@
 			children = (
 				D2115D0B21B97BBE0077A046 /* Constants.swift */,
 				D276CDB021B96C3500EEB268 /* UIColor+Extension.swift */,
+				D2115D1621B9952D0077A046 /* Ipiranga-Bridging-Header.h */,
+				D250C12B21BAC915003F5FAA /* CameraHandler.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -232,18 +301,42 @@
 		D276CDB321B96F9600EEB268 /* Task */ = {
 			isa = PBXGroup;
 			children = (
+				D2115D1321B98EBE0077A046 /* Input */,
 				D276CDB921B973D700EEB268 /* TaskTabBarViewController.swift */,
-				D276CDB421B96FDB00EEB268 /* IpirangaList */,
+				D276CDB421B96FDB00EEB268 /* List */,
 			);
 			path = Task;
 			sourceTree = "<group>";
 		};
-		D276CDB421B96FDB00EEB268 /* IpirangaList */ = {
+		D276CDB421B96FDB00EEB268 /* List */ = {
 			isa = PBXGroup;
 			children = (
 				D276CDB521B9702000EEB268 /* IpirangaListViewController.swift */,
 			);
-			path = IpirangaList;
+			path = List;
+			sourceTree = "<group>";
+		};
+		D2C457FC21BACEC700F77FD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2E3613321BAFEA300D68AAE /* WorkflowProcessDto.h */,
+				D2E3613421BAFEA300D68AAE /* WorkflowProcessDto.m */,
+				D2C4580721BAD35200F77FD9 /* AttachmentProcessReturn.h */,
+				D2C4580621BAD35200F77FD9 /* AttachmentProcessReturn.m */,
+				D2C4580421BAD02400F77FD9 /* Attachment.h */,
+				D2C4580321BAD02300F77FD9 /* Attachment.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2E3614421BB424300D68AAE /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				D2E3614521BB425D00D68AAE /* ViagemViewController.swift */,
+				D2E3614721BB42AA00D68AAE /* DadosViewController.swift */,
+				D2E3614921BB439F00D68AAE /* ComprovanteViewController.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		E2F0350C49E8088F77C72D00 /* Frameworks */ = {
@@ -328,6 +421,7 @@
 				TargetAttributes = {
 					D276CD6421B85F7400EEB268 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					D276CD7821B85F7500EEB268 = {
 						CreatedOnToolsVersion = 10.1;
@@ -366,12 +460,16 @@
 			files = (
 				D276CD7321B85F7500EEB268 /* LaunchScreen.storyboard in Resources */,
 				D2115CFD21B974CD0077A046 /* Task.storyboard in Resources */,
+				D2E3615221BB4DD000D68AAE /* Adobe_Photoshop_Elements_PNG.png in Resources */,
 				D2115D0721B9785E0077A046 /* Profile.storyboard in Resources */,
 				D276CD9C21B96AC100EEB268 /* BPMBackgroundLogin.mp4 in Resources */,
 				D2115D0321B977DE0077A046 /* fluigSdk.plist in Resources */,
 				D2115CFF21B974CD0077A046 /* Main.storyboard in Resources */,
+				D2E3614C21BB480800D68AAE /* mapa.png in Resources */,
+				D2115D1221B9895E0077A046 /* TaskTableViewCell.xib in Resources */,
 				D276CD7021B85F7500EEB268 /* Assets.xcassets in Resources */,
 				D2115D0621B9785E0077A046 /* Notification.storyboard in Resources */,
+				D2E3615021BB4D3700D68AAE /* AttachmentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,12 +515,24 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Ipiranga/Pods-Ipiranga-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RSLoadingView/RSLoadingView.framework",
+				"${BUILT_PRODUCTS_DIR}/SBJson/SBJson.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/TKImageShowing/TKImageShowing.framework",
 				"${PODS_ROOT}/fluigsdk/fluigSDKCore.framework",
 				"${PODS_ROOT}/fluigsdk/fluigSDKFlows.framework",
 				"${PODS_ROOT}/fluigsdk/fluigSDKUi.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSLoadingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SBJson.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKImageShowing.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/fluigSDKCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/fluigSDKFlows.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/fluigSDKUi.framework",
@@ -475,11 +585,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2115D1121B9895E0077A046 /* TaskTableViewCell.swift in Sources */,
 				D2115D0A21B97B280077A046 /* FluigAPI.swift in Sources */,
+				D2115D1521B98EFC0077A046 /* IpirangaInputViewController.swift in Sources */,
 				D276CD6921B85F7400EEB268 /* AppDelegate.swift in Sources */,
 				D276CDB621B9702000EEB268 /* IpirangaListViewController.swift in Sources */,
 				D276CDB121B96C3500EEB268 /* UIColor+Extension.swift in Sources */,
+				D2C4580521BAD02400F77FD9 /* Attachment.m in Sources */,
+				D2E3614A21BB439F00D68AAE /* ComprovanteViewController.swift in Sources */,
 				D276CDBA21B973D700EEB268 /* TaskTabBarViewController.swift in Sources */,
+				D2E3614321BB40ED00D68AAE /* DadosView.swift in Sources */,
+				D2E3613521BAFEA300D68AAE /* WorkflowProcessDto.m in Sources */,
+				D2C4580821BAD35200F77FD9 /* AttachmentProcessReturn.m in Sources */,
+				D2E3614F21BB4D3700D68AAE /* AttachmentTableViewCell.swift in Sources */,
+				D2E3614621BB425D00D68AAE /* ViagemViewController.swift in Sources */,
+				D2E3614821BB42AA00D68AAE /* DadosViewController.swift in Sources */,
+				D250C12C21BAC915003F5FAA /* CameraHandler.swift in Sources */,
 				D2115D0C21B97BBE0077A046 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -648,15 +769,19 @@
 			baseConfigurationReference = 74DC157D22D499CABC0C989C /* Pods-Ipiranga.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CS7QV9TV4;
 				INFOPLIST_FILE = Ipiranga/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.totvs.Ipiranga;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ipiranga/Utils/Ipiranga-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -667,15 +792,18 @@
 			baseConfigurationReference = 7F45C214D20D4BEF372952D7 /* Pods-Ipiranga.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CS7QV9TV4;
 				INFOPLIST_FILE = Ipiranga/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.totvs.Ipiranga;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ipiranga/Utils/Ipiranga-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -143,11 +143,23 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RSLoadingView/RSLoadingView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SBJson/SBJson.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TKImageShowing/TKImageShowing.framework"
   install_framework "${PODS_ROOT}/fluigsdk/fluigSDKCore.framework"
   install_framework "${PODS_ROOT}/fluigsdk/fluigSDKFlows.framework"
   install_framework "${PODS_ROOT}/fluigsdk/fluigSDKUi.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RSLoadingView/RSLoadingView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SBJson/SBJson.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TKImageShowing/TKImageShowing.framework"
   install_framework "${PODS_ROOT}/fluigsdk/fluigSDKCore.framework"
   install_framework "${PODS_ROOT}/fluigsdk/fluigSDKFlows.framework"
   install_framework "${PODS_ROOT}/fluigsdk/fluigSDKUi.framework"

@@ -8,6 +8,11 @@ target 'Ipiranga' do
   # Pods for Ipiranga
 
  pod 'fluigsdk', :git => 'https://github.com/fluig/fluigsdkios', :branch => 'develop'
+ pod 'Alamofire'
+ pod 'SBJson'
+ pod 'TKImageShowing'
+ pod 'IQKeyboardManagerSwift'
+ pod 'RSLoadingView'
 
   target 'IpirangaTests' do
     inherit! :search_paths

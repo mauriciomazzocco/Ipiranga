@@ -8,129 +8,151 @@
 
 import Foundation
 import fluigSDKCore
+import Alamofire
+import SBJson
 
 
-class FluigAPI {
-/*
+class FluigAPI  {
 
-    func changeLanguage(){
+    func uploadWithAlamofire(fileName: String ,dataToUpload: Data) {
 
+        let url : String = App.getCurrentHost() + "/ecm/api/rest/ecm/mobileDocumentRest/upload?fileName="+fileName
+        
+        var request = URLRequest(url: URL(string: url)!)
 
-        let languageAppFluig =   UserDefaults.standard.object(forKey: "languageFluigAPP") as? String
-        var deviceLanguageCurrent: String = NSLocale.preferredLanguages[0]
-        if (deviceLanguageCurrent.count ?? 0) > 2 {
-            deviceLanguageCurrent = ((deviceLanguageCurrent as NSString).substring(to: 2))
+        request.setValue("application/octet-stream", forHTTPHeaderField: "Content-Type")
+        request.addValue(String(dataToUpload.count), forHTTPHeaderField: "Content-Length") // <-- here!
+
+        var urlS = URLRequest(url: URL(string: url)!)
+        FluigSDK.signRequest(req: &urlS)
+        let allHtppUserFields =  urlS.allHTTPHeaderFields
+        var auth = ""
+        if let aut =  allHtppUserFields?["Authorization"] {
+            auth = aut
         }
-        if(deviceLanguageCurrent != languageAppFluig){
-            guard let tokens = FluigSDK.getCurrentUserTokens() else { return }
-            var url : String = App.getCurrentHost() + "/api/public/push/changeLanguage"
-            url = url.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
+
+        request.addValue(auth, forHTTPHeaderField: "Autorization")
+        request.httpMethod = "POST"
+
+        request.httpBody = dataToUpload
+        let session = URLSession.shared
 
 
+        session.dataTask(with: request) { (data, response, error) in
 
-            var urlComponents = NSURLComponents(string: url)!
+            print(data)
+            print("OKKKKKKKKKKKK")
+            }.resume()
 
-            urlComponents.queryItems = [
-                URLQueryItem(name: "language", value: deviceLanguageCurrent),
-                URLQueryItem(name: "deviceToken", value: tokens.accessToken)
+    }
+
+
+    func vsendProcess(movimentSequence:String, processInstanceId: String, choosedState: String, attachments: [AttachmentProcessReturn], tipoCombustivel: String, quantidadeLitros: String, valorTotal: String, kmAtual: String, posto: String){
+
+
+        for attachs in attachments{
+            let attachemtObject = attachs.attachments.lastObject as! Attachment
+            uploadWithAlamofire(fileName: attachemtObject.fileName, dataToUpload: attachs.archive)
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: {
+              print("Iniciou")
+        var url : String = App.getCurrentHost() + "/ecm/api/rest/ecm/mobileWorkflowRest/saveAndSendTaskClassic"
+
+        var urlS = URLRequest(url: URL(string: url)!)
+        FluigSDK.signRequest(req: &urlS)
+        let allHtppUserFields =  urlS.allHTTPHeaderFields
+        var auth = ""
+        if let aut =  allHtppUserFields?["Authorization"] {
+            auth = aut
+        }
+        let headers : [String : String] = [
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Authorization": auth
+        ]
+        let attachString = SBJson5Writer.init().string(with: attachments)
+
+        let jsonCardData = "[{\"key\":\"itemPosto___"+movimentSequence+"\",\"value\":\""+posto+"\"},{\"key\":\"itemQuantidade___"+movimentSequence+"\",\"value\":\""+quantidadeLitros+"\"},{\"key\":\"itemTipoCombustivel___"+movimentSequence+"\",\"value\":\""+tipoCombustivel+"\"},{\"key\":\"itemValorTotal___"+movimentSequence+"\",\"value\":\""+valorTotal+"\"},{\"key\":\"itemKmAtual___"+movimentSequence+"\",\"value\":\""+kmAtual+"\"},{\"key\":\"WKMobile\",\"value\":\"true\"},{\"key\":\"wdkcontrolmob\",\"value\":\"true\"}]"
+
+          
+        let parameterDictionary = ["processInstanceId" : processInstanceId,
+                                   "threadSequence" : "0",
+                                   "choosedState": choosedState,
+                                   "cardData" : jsonCardData,
+                                   "comments" : "",
+                                   "completeTask" : "true",
+                                   "appointment" : "",
+                                   "managerMode" : "false",
+                                   "attachments" : attachString!
+            ] as [String : Any]
+
+
+        Alamofire.request(URL(string: url)!, method: .post, parameters: parameterDictionary, encoding: URLEncoding.default, headers: headers)
+
+            .responseJSON { response in
+                print(response)
+                print("JSON Response")
+
+                NotificationCenter.default.post(name: Notification.Name("finishLoading"), object: nil)
+                
+            }
+        })
+
+    }
+
+    func getAllItemsFromServer(completion: @escaping (_ result: [WorkflowProcessDto]?) -> Void) {
+        let url : String = App.getCurrentHost() + "/ecm/api/rest/ecm/mobileCentralTaskRest/findWorkflowTasksOnDemand_v2"
+
+        var urlS = URLRequest(url: URL(string: url)!)
+        FluigSDK.signRequest(req: &urlS)
+        let allHtppUserFields =  urlS.allHTTPHeaderFields
+        var auth = ""
+        if let aut =  allHtppUserFields?["Authorization"] {
+            auth = aut
+        }
+        let headers : [String : String] = [
+            "Content-Type": "application/json",
+            "Authorization": auth
+        ]
+
+
+        let parameterDictionary = ["runEvent" : "true",
+                                   "limit": "100",
+                                   "lastRowId" : "0",
+                                   "ascending" : "true"
+
             ]
 
 
-            var request = URLRequest(url: urlComponents.url!)
-            request.httpMethod = "POST"
-            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-            request.setValue("iOS app", forHTTPHeaderField: "User-Agent")
+        Alamofire.request(URL(string: url)!, method: .get, parameters: parameterDictionary, encoding: URLEncoding.default, headers: headers)
 
+            .responseData { response in
+                do {
+                    let jsonObject = try JSONSerialization.jsonObject(with: response.data!, options:JSONSerialization.ReadingOptions(rawValue: 0))
+                    guard let dictionary = jsonObject as? Dictionary<String, Any> else {
 
-            let parameterDictionary = ["language": deviceLanguageCurrent, "deviceToken": tokens.accessToken]
+                        return
+                    }
 
-           guard let httpBody = try? JSONSerialization.data(withJSONObject: parameterDictionary, options: []) else {
-                return
-            }
-            request.httpBody = httpBody
+                    var content = dictionary["content"] as! [String: Any]
 
-            AuthenticationServices.signRequest(req: request){ (resp) in
-                switch (resp){
-                case .success(let request):
-                    let session = URLSession.shared
-                    session.dataTask(with: request) { (data, response, error) in
-                        if let response = response {
-                            print(response)
-                        }
-                        if let data = data {
-                            do {
-                                let str = String(data: data, encoding: String.Encoding.utf8) as String!
-                                if(str!.lowercased().contains("ok")){
-                                    UserDefaults.standard.setValue(deviceLanguageCurrent, forKey: "languageFluigAPP")
-                                    UserDefaults.standard.synchronize()
-                                }
+                    let wk = content["wkfProcess"]! as! [Any]
+                    var arrayWorkflow = [WorkflowProcessDto]()
+                    print(wk)
+                    for arr in wk {
+                        let workflowProcess = WorkflowProcessDto.init().dictToWorkflowProcessDto(withDict: arr as! Dictionary )
+                        arrayWorkflow.append(workflowProcess!)
+                        completion(arrayWorkflow)
 
-                            }catch {
-                                UserDefaults.standard.setValue(nil, forKey: "languageFluigAPP")
-                                UserDefaults.standard.synchronize()
-                                print(error)
-                            }
-                        }
-                        }.resume()
+                   }
 
-                case .failure( _):
-                    break;
                 }
-            }
+                catch let error as NSError {
+                    print("Found an error - \(error)")
+                }
         }
+
     }
- */
-  /*  func registerPush(token: String, channelID: String, language: String){
-        if token == "" && channelID == ""{
-            return
-        }
-        var url : String = App.getCurrentHost() + "/api/public/push/register"
-        url = url.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
-        var request = URLRequest(url: URL(string: url)!)
-        request.httpMethod = "POST"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.setValue("iOS app", forHTTPHeaderField: "User-Agent")
-        guard let tokens = FluigSDK.getCurrentUserTokens() else { return }
-        UserDefaults.standard.setValue(tokens.accessToken, forKey: "currentUserAcessToken")
-        UserDefaults.standard.synchronize()
-        let parameterDictionary = ["token" :token, "channel" : channelID,  "deviceToken": tokens.accessToken, "language": language, "imei" : UIDevice.current.identifierForVendor!.uuidString]
-
-        guard let httpBody = try? JSONSerialization.data(withJSONObject: parameterDictionary, options: []) else {
-            return
-        }
-        request.httpBody = httpBody
-
-        AuthenticationServices.signRequest(req: request){ (resp) in
-            switch (resp){
-            case .success(let request):
-                let session = URLSession.shared
-                session.dataTask(with: request) { (data, response, error) in
-                    if let response = response {
-                        print(response)
-                    }
-                    if let data = data {
-                        do {
-                            let str = String(data: data, encoding: String.Encoding.utf8) as String!
-                            if(str!.lowercased().contains("ok")){
-                                UserDefaults.standard.setValue(false, forKey: "updatedChanneID")
-                                UserDefaults.standard.setValue(language, forKey: "languageAPP")
-                                UserDefaults.standard.synchronize()
-                            }
-
-                        }catch {
-                            UserDefaults.standard.setValue(true, forKey: "updatedChanneID")
-                            UserDefaults.standard.synchronize()
-                            print(error)
-                        }
-                    }
-                    }.resume()
-
-            case .failure(let _):
-                break;
-            }
-        }
-    }
-     */
 
     func getAllItems(
         page: Int,
@@ -143,7 +165,7 @@ class FluigAPI {
         completionHandler: @escaping (ApiCollectionResponse<ProcessTaskResponse>?, String?) -> Void) {
 
         let endPoint = BPMApi(domain: App.getCurrentHost())
-        endPoint.getTasks(processInstanceId: processInstanceId, movementSequence: movementSequence, assignee: (FluigSDK.currentUser?.code)!, status:status, slaStatus: nil, processId: "22", appDecisionSearch: searchText, page: page, pageSize: 20, expand: ["appDecisionInfo"]) { (response) in
+        endPoint.getTasks(processInstanceId: processInstanceId, movementSequence: movementSequence, assignee: (FluigSDK.currentUser?.code)!, status:status, slaStatus: nil, processId: "postoIpiranga", appDecisionSearch: searchText, page: page, pageSize: 20, expand: ["appDecisionInfo"]) { (response) in
             switch response {
             case .success(let item):
                 completionHandler(item, nil)
@@ -152,6 +174,9 @@ class FluigAPI {
             }
         }
     }
+
+
+    
  /*
     func getHtmlForMobile(processId: String, processInstanceId: String, processVersion: String, movementSequence: String, readOnly: Bool,  completion: @escaping (_ result: String?) -> Void) {
 

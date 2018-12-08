@@ -18,7 +18,7 @@ class TaskTabBarViewController: UITabBarController {
         self.tabBar.items?[1].title =  NSLocalizedString("tasks", comment: "")
         self.tabBar.items?[2].title =  NSLocalizedString("profile", comment: "")
         tabBar.barTintColor = .tabBarBPM
-        tabBar.tintColor = .greenTabBar
+     
         tabBar.unselectedItemTintColor = .unselectTabBarBPM
         tabBar.layer.borderWidth = 0.50
         tabBar.shadowImage = UIImage()
@@ -32,6 +32,7 @@ class TaskTabBarViewController: UITabBarController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
 
     }
 

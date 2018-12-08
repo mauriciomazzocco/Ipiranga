@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.7.3)
   - fluigsdk (0.2.10):
     - fluigsdk/core (= 0.2.10)
     - fluigsdk/flows (= 0.2.10)
@@ -8,9 +9,31 @@ PODS:
     - fluigsdk/core
     - fluigsdk/ui
   - fluigsdk/ui (0.2.10)
+  - IQKeyboardManagerSwift (6.2.0)
+  - RSLoadingView (1.1.3)
+  - SBJson (5.0.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - TKImageShowing (1.0.7):
+    - SDWebImage (~> 4.0)
 
 DEPENDENCIES:
+  - Alamofire
   - fluigsdk (from `https://github.com/fluig/fluigsdkios`, branch `develop`)
+  - IQKeyboardManagerSwift
+  - RSLoadingView
+  - SBJson
+  - TKImageShowing
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - RSLoadingView
+    - SBJson
+    - SDWebImage
+    - TKImageShowing
 
 EXTERNAL SOURCES:
   fluigsdk:
@@ -23,8 +46,14 @@ CHECKOUT OPTIONS:
     :git: https://github.com/fluig/fluigsdkios
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   fluigsdk: b9e33c24cf39a432adbcf140afcb26a4080981b2
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  RSLoadingView: c7749afdd455229643e8f34277d0695973a15b1a
+  SBJson: 73c848dc34be51fda282fab12bda6c426f5ead08
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  TKImageShowing: a3ebf233a588a96a0d67596f3193abcc6b96bf22
 
-PODFILE CHECKSUM: 51af2d8772ead979557cd5558c414b58e4d771a2
+PODFILE CHECKSUM: 2e1211a64744779074960a89eaaf87f22debec49
 
 COCOAPODS: 1.5.3
