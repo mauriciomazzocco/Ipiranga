@@ -40,6 +40,8 @@
 		D2E3614F21BB4D3700D68AAE /* AttachmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E3614D21BB4D3700D68AAE /* AttachmentTableViewCell.swift */; };
 		D2E3615021BB4D3700D68AAE /* AttachmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E3614E21BB4D3700D68AAE /* AttachmentTableViewCell.xib */; };
 		D2E3615221BB4DD000D68AAE /* Adobe_Photoshop_Elements_PNG.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E3615121BB4DD000D68AAE /* Adobe_Photoshop_Elements_PNG.png */; };
+		D2E3615521BB867500D68AAE /* MetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E3615421BB867500D68AAE /* MetaViewController.swift */; };
+		D2E3615721BB913C00D68AAE /* ConsumoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E3615621BB913C00D68AAE /* ConsumoViewController.swift */; };
 		D50005B5F88BABA0E5ADD278 /* Pods_IpirangaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1441716BBEE8D87490BD560 /* Pods_IpirangaUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +112,8 @@
 		D2E3614D21BB4D3700D68AAE /* AttachmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentTableViewCell.swift; sourceTree = "<group>"; };
 		D2E3614E21BB4D3700D68AAE /* AttachmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttachmentTableViewCell.xib; sourceTree = "<group>"; };
 		D2E3615121BB4DD000D68AAE /* Adobe_Photoshop_Elements_PNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Adobe_Photoshop_Elements_PNG.png; sourceTree = "<group>"; };
+		D2E3615421BB867500D68AAE /* MetaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaViewController.swift; sourceTree = "<group>"; };
+		D2E3615621BB913C00D68AAE /* ConsumoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumoViewController.swift; sourceTree = "<group>"; };
 		E0FC5B305A78740B0768C4DC /* Pods-IpirangaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IpirangaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IpirangaTests/Pods-IpirangaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -293,6 +297,7 @@
 		D276CDB221B96F8000EEB268 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D2E3615321BB862F00D68AAE /* New Group */,
 				D276CDB321B96F9600EEB268 /* Task */,
 			);
 			path = Scenes;
@@ -335,6 +340,15 @@
 				D2E3614521BB425D00D68AAE /* ViagemViewController.swift */,
 				D2E3614721BB42AA00D68AAE /* DadosViewController.swift */,
 				D2E3614921BB439F00D68AAE /* ComprovanteViewController.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		D2E3615321BB862F00D68AAE /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				D2E3615421BB867500D68AAE /* MetaViewController.swift */,
+				D2E3615621BB913C00D68AAE /* ConsumoViewController.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -586,6 +600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2115D1121B9895E0077A046 /* TaskTableViewCell.swift in Sources */,
+				D2E3615521BB867500D68AAE /* MetaViewController.swift in Sources */,
 				D2115D0A21B97B280077A046 /* FluigAPI.swift in Sources */,
 				D2115D1521B98EFC0077A046 /* IpirangaInputViewController.swift in Sources */,
 				D276CD6921B85F7400EEB268 /* AppDelegate.swift in Sources */,
@@ -597,6 +612,7 @@
 				D2E3614321BB40ED00D68AAE /* DadosView.swift in Sources */,
 				D2E3613521BAFEA300D68AAE /* WorkflowProcessDto.m in Sources */,
 				D2C4580821BAD35200F77FD9 /* AttachmentProcessReturn.m in Sources */,
+				D2E3615721BB913C00D68AAE /* ConsumoViewController.swift in Sources */,
 				D2E3614F21BB4D3700D68AAE /* AttachmentTableViewCell.swift in Sources */,
 				D2E3614621BB425D00D68AAE /* ViagemViewController.swift in Sources */,
 				D2E3614821BB42AA00D68AAE /* DadosViewController.swift in Sources */,

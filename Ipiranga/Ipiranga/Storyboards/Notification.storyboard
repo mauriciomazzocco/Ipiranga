@@ -32,7 +32,7 @@
         <!--Notificações-->
         <scene sceneID="H0j-Zi-qs2">
             <objects>
-                <viewController title="Notificações" automaticallyAdjustsScrollViewInsets="NO" id="Lqy-g5-oxV" customClass="NotificationItemListViewController" customModule="Ipiranga" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Notificações" automaticallyAdjustsScrollViewInsets="NO" id="Lqy-g5-oxV" customClass="MetaViewController" customModule="Ipiranga" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CAk-aL-fmu"/>
                         <viewControllerLayoutGuide type="bottom" id="bxg-se-vHN"/>
@@ -40,28 +40,9 @@
                     <view key="view" contentMode="scaleToFill" id="7e8-Fv-HHt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="foV-sI-8kD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="Lqy-g5-oxV" id="qJt-zl-k4M"/>
-                                    <outlet property="delegate" destination="Lqy-g5-oxV" id="dpU-AU-0dX"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="foV-sI-8kD" firstAttribute="leading" secondItem="7e8-Fv-HHt" secondAttribute="leading" id="5Vv-eZ-WvD"/>
-                            <constraint firstAttribute="trailing" secondItem="foV-sI-8kD" secondAttribute="trailing" id="h2N-VA-hcQ"/>
-                            <constraint firstItem="bxg-se-vHN" firstAttribute="top" secondItem="foV-sI-8kD" secondAttribute="bottom" id="mmt-ca-6mo"/>
-                            <constraint firstItem="foV-sI-8kD" firstAttribute="top" secondItem="7e8-Fv-HHt" secondAttribute="top" id="q8J-e5-SQO"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Notificações" id="P4S-au-t4x"/>
-                    <connections>
-                        <outlet property="tableView" destination="foV-sI-8kD" id="7r4-Nd-Itp"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Meta" id="P4S-au-t4x"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2qb-db-gPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

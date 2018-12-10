@@ -45,7 +45,19 @@ class FluigAPI  {
             }.resume()
 
     }
+    func generateUrlRequest(urlString : String)  ->URLRequest{
 
+        var url : String = App.getCurrentHost() + urlString
+
+        var urlS = URLRequest(url: URL(string: url)!)
+        FluigSDK.signRequest(req: &urlS)
+
+        urlS.addValue("TRUE", forHTTPHeaderField: "FLUIGMOBILE")
+        return urlS
+
+
+
+    }
 
     func vsendProcess(movimentSequence:String, processInstanceId: String, choosedState: String, attachments: [AttachmentProcessReturn], tipoCombustivel: String, quantidadeLitros: String, valorTotal: String, kmAtual: String, posto: String){
 

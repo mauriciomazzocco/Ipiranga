@@ -96,7 +96,9 @@ extension IpirangaListViewController: UITableViewDelegate, UITableViewDataSource
         if let cell = tableView.dequeueReusableCell(
             withIdentifier: "TaskTableViewCell",
             for: indexPath) as? TaskTableViewCell{
-            cell.lblTxt.text = item.processId + " " + item.processInstanceId.description
+            cell.lblTxt.text = item.processDescription
+            cell.lblProcess.text =  item.movementHour
+            cell.lblID.text = "Viajem Joinville - Curitiba"
             return cell
 
         }

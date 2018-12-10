@@ -42,7 +42,7 @@ class IpirangaInputViewController: UIViewController {
 
 @objc func finishLoading(notification: Notification) {
     loadingView.hide()
-    NotificationCenter.default.post(name: Notification.Name("reloadMinhasViagens"), object: nil)
+        NotificationCenter.default.post(name: Notification.Name("reloadMinhasViagens"), object: nil)
      self.navigationController?.popViewController(animated: true)
 
 
